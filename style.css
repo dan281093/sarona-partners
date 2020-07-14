@@ -1,0 +1,603 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+p{
+  padding: 10px;
+}
+.row:before, .row:after {
+display: flex !important;
+}
+.is-active .dropdown-menu {
+  display: block;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.808);
+    z-index: 1;
+}
+
+#logo {
+    margin: 3vh;
+    margin-left: 20vh;
+    margin-bottom: 1vh;
+    width: auto;
+    height: 10vh;
+}
+
+.rubric {
+    width: 100%;
+    margin: 4vh;
+    margin-right: 6vh;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+.rubric a {
+    font-weight: 350;
+    color: rgb(141, 140, 140);
+    vertical-align: middle;
+}
+
+.burger{
+    display: none;
+}
+
+.burgerContainer {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+  }
+
+#burgerContent{
+    display: none;
+    padding: 2vh;
+    margin-left: -10px;
+    margin-top: -30px;
+    float: right;
+}
+
+#burgerContent div{
+    margin: 1vh;
+
+}
+
+#burgerContent div a{
+    color: rgb(141, 140, 140);
+    font-weight: 350;
+    font-size: 2.5vh;
+
+}
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(141, 140, 140);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+  }
+
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+.header {
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.titleDiv{
+    padding: 23vh 0;
+    padding-left: 5vh;
+    letter-spacing: 2px;
+}
+
+.titleDiv p{
+    color: gray;
+    font-weight: 300;
+    font-size: 3vh;
+}
+.titleDiv img {
+  height: 60vh;
+  margin-top: 7vh;
+}
+
+#title {
+    color: rgb(73, 72, 72);
+    font-size: 4.5vh;
+    margin: 1vh 0;
+}
+
+
+.header img {
+    height: 60vh;
+    margin-top: 7vh;
+}
+
+.emptyLine {
+    background-color: gray;
+    height: 2px;
+    width: 90%;
+    margin: 2vh 2vh;
+}
+
+
+.container p{
+    /* color: rgb(141, 140, 140); */
+    color :rgb(26, 26, 26);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.subtitle{
+    color: rgb(83, 81, 81);
+    letter-spacing: 2px;
+    /* font-size: 4vh; */
+    padding: 3vh;
+    text-align: center;
+    font-size: x-large;
+}
+
+.ecoDesc{
+    color: #2997d6;
+    letter-spacing: 2px;
+    margin: 4vh 0;
+    font-size: 3.5vh;
+}
+
+.about {
+  position: relative;
+  margin: auto;
+}
+
+.backgroundImage{
+    height: 80vh;
+    width: 80vh;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.aboutBack{
+    right: -1vh;
+    opacity: 0.35;
+}
+
+.theEcosystemBack{
+    left: -45vh;
+}
+.theEcosystem {
+  margin: auto;
+  margin-left: 50px
+}
+
+.contactBack{
+    left: -20vh;
+    transform: rotate(35deg);
+    height: 65vh;
+    width: 65vh;
+
+}
+#aboutSubChange {
+  text-align: center;
+}
+
+.saronaLogosDiv, .saronaProgramsLogo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    align-items: center;
+}
+
+.saronaLogosDiv img{
+    margin: 4vh;
+    margin-bottom: 2vh;
+    height: 15vh;
+    width: 15vh;
+    filter:  grayscale(100%);
+}
+
+.saronaLogosDivSite input{
+   display: block;
+   margin: auto;
+   margin-bottom: 2vh;
+}
+
+.visitSite:hover{
+    background-color: rgb(219, 217, 217);
+}
+
+.saronaLogosDivSite {
+    cursor: pointer;
+}
+
+.visitSite{
+    color: rgb(83, 81, 81);
+    border: solid rgb(83, 81, 81) 3px;
+    padding: 1vh 4vh;
+    border-radius: 20px;
+    margin: 2vh 4vh;
+}
+
+.clickableLogos img{
+    height: auto;
+    width: 9vw;
+    margin: 4vh 6vh;
+}
+
+.saronaMediaLogo{
+    display: none;
+}
+ /* .partnersLine{
+    justify-content: space-around;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+} */
+
+.partnersLine img{
+    width: 60%;
+    height: auto;
+    margin: 5vh 2vh;
+}
+
+/* .bestPartners img{
+    height: 7.5vh;
+} */
+
+.contact {
+    padding-bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.contact .subtitle{
+    padding-bottom: 4vh;
+}
+
+
+#getInTouchBtn {
+    height: 7vh;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-radius: 10px;
+    margin: 4vh auto;
+    padding: 0 1.5rem;
+    font-family: Open Sans,sans-serif;
+    color: white;
+    background-color: rgb(33, 150, 243);
+    border-color: rgb(33, 150, 243);
+}
+
+#getInTouchBtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(129, 127, 127, 0.24), 0 17px 30px 0 rgba(129, 127, 127, 0.24);
+}
+
+.copyright{
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+    color: rgb(151, 150, 150);
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url('images/back.svg');
+  margin-left: -50px;
+}
+.carousel-control-next-icon {
+  background-image: url('images/next.svg');
+  margin-right: -50px;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover  {
+  background-color: rgb(219, 217, 217);
+}
+
+.carousel {
+  height: 70px;
+}
+.w-100 {
+  width: 75% !important;
+}
+#ventures, #space, #media {
+  padding: 2px;
+}
+
+.active {
+ filter: grayscale(0%)!important;
+}
+
+
+.same-height a {
+  cursor: pointer;
+}
+
+.small-line {
+  border-top: solid;
+  border-width: thin;
+  width: 45%;
+  margin: auto;
+  border-color: #acacac;
+}
+
+
+
+
+
+
+
+  @media only screen and (max-width: 810px) {
+    /* For mobile phones: */
+
+    .burger{
+      display: block;
+      direction: rtl;
+    }
+    .burgerContainer {
+        display: block;
+        margin: 40px;
+        margin-right: 50px;
+    }
+    .rubric {
+        display: none;
+    }
+  }
+@media screen and (max-width: 992px) {
+  #getInTouchBtn {
+    font-size: 2vh;
+    padding: 5px;
+  }
+  .clickableLogos img {
+    height: auto;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 3vh auto;
+  }
+  .header img {
+    height: 40vh;
+  }
+  .header {
+    height: 25vh;
+    padding: 60px;
+  }
+  .titleDiv {
+    padding: 0px;
+  }
+  .partnersLine img {
+    width: 100%;
+  }
+  .theEcosystem {
+    margin-left: 0px;
+  }
+  .aboutBack{
+    right: -60vh;
+  }
+  #logo {
+    margin-left: 0px;
+  }
+  .logo-burger {
+   margin-top: 25px;
+  }
+}
+.same-height {
+  min-height: 200px;
+  line-height: 160px;
+}
+
+
+
+.mx-auto {
+  width: 50%;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover  {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+     .carousel-control-prev-icon {
+  background-image: url('images/back.svg');
+  margin-left: 0px;
+}
+  .carousel-control-next-icon {
+    background-image: url('images/next.svg');
+    margin-right: 0px;
+  }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+
+@media (max-width: 768px) {
+  body{
+    margin-left: 1em!important;
+  }
+  #innovationform {
+    flex-direction: column;
+  }
+}
+
+
+.carousel-inner img {
+  margin: auto;
+  height: auto;
+  max-width:  100%;
+}
+
+.form-group {
+  margin-right: 20px;
+}
+
+.slick-arrow {
+  background-color: #1782EA!important;
+}
+
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
+
+/* .slick-prev {
+  left: 0 !important;
+  height: 25px!important;
+}
+
+ .slick-next {
+  right: 0 !important;
+  height: 25px!important;
+ } */
